@@ -1,0 +1,52 @@
+@import "../../../styles.scss";
+
+.buy-sell{
+    padding: 50px;
+    background: linear-gradient(180deg, #000101 50%, #fff 50%);
+   
+    h4{
+        padding: 0px 40px 10px 40px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Josefin Sans;
+      .jumping-letters{
+       padding-top: 20px;
+       margin-bottom: 30px;
+       font-size: 48px;
+       font-family: cursive;
+      }
+      .jumping-letters span {
+        display: inline-block;
+        animation: jump 5s infinite alternate;
+    }
+    }
+    .buy-sell-img{
+background-color: #fff;
+border-radius: 26px;
+h3{
+    padding-top: 10px;
+    color: #000101;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+li{
+    font-size: 16px;
+    padding-bottom: 6px;
+    color: #000101;
+    font-weight: 500;
+}
+    }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}

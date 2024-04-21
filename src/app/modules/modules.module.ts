@@ -4,15 +4,19 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HomeContentComponent } from './home-content/home-content.component';
+
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    HomeContentComponent
   ],
   imports: [
     CommonModule,
@@ -20,10 +24,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     NzMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    NzGridModule
   ],
   exports: [
     HeaderComponent,
+    HomeContentComponent,
     HomeComponent
   ]
 })

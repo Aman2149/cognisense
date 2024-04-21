@@ -1,12 +1,145 @@
-.header-section{
-    background-color: linear-gradient(180deg,hsl(216, 100%, 6%) -40%,#00071500) !important;
-    
-    background: linear-gradient(180deg,hsl(216, 100%, 6%) -20%,#00071500) !important;
-    .navbar {
-        background-color: #00071500;
-        background: #00071500
+@import "../../../styles.scss";
+.header-section {
+  // background-color: linear-gradient(180deg, #000c1f -40%, #00071500) !important;
+
+  //   background: linear-gradient(
+  //     180deg,
+  //     #fff ,
+  //     #f8fcf2 ,
+  //     #80c707
+  // ) !important;
+  .navbar {
+    // background-color: linear-gradient(
+    //   180deg,
+    //   hsl(216, 100%, 6%) -20%,
+    //   #00071500
+    // ) !important;
+    background: linear-gradient(180deg, #80c707 30%, #ffffff);
+    // background: linear-gradient( 180deg, #000c1f 20%, #0007154d);
+
+    height: 100px;
+  }
+  .my-menu .nav-link {
+    color: #fff !important;
+    cursor: pointer;
+    margin-right: 8px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 36px;
+    font-weight: 500;
+  }
+  .my-menu .nav-link:hover,
+  .my-menu .nav-link:focus {
+    background-color: #80c707;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 36px;
+  }
+  .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  .navbar-toggler {
+    border: none !important;
+  }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+
+    background-color: #fff;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .navbar-brand img {
+    animation: logoAnimation 4s 5;
+  }
+  .landing-text {
+    h3 {
+      max-width: 600px;
+      font-family: Raleway;
+      font-size: 24px !important;
+      color: white;
+      text-align: center;
+      font-weight: 500;
+    }
+    p {
+      font-size: 48px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      color: #c7e692;
+      font-weight: 600;
+      line-height: 50px;
+      @media (max-width: 991.98px) {
+        font-size: 44px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      line-height: 46px;
       }
-      .my-menu .nav-link  {
-        color:#fff !important;
-     }
+    }
+    animation: slideInFromLeft 4s ease-in-out;
+    animation-delay: 1.5s;
+  }
+  @keyframes logoAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+  @media (max-width: 991.98px) {
+    .navbar-collapse.show {
+      background-color: linear-gradient(
+        180deg,
+        hsl(216, 100%, 6%) -20%,
+        #000715
+      ) !important;
+    }
+    .navbar {
+      height: auto !important;
+    }
+    .my-menu .nav-link {
+      cursor: pointer !important;
+    }
+  }
+}
+
+.landing-box {
+  padding-top: 120px;
+  height: calc(100vh);
+  background-image: url("../../../assets/bile-hand-img.jpg");
+  background: linear-gradient(
+      180deg,
+      rgba(0, 12, 31, 0.7) -40%,
+      /* Adjust opacity to 0.5 */ rgba(0, 7, 21, 0.7)
+        /* Adjust opacity to 0.5 */
+    ),
+    url("../../../assets/bile-hand-img.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .landing-content {
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
