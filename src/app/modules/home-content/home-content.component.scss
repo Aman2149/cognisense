@@ -9,11 +9,20 @@
         font-size: 20px;
         text-align: center;
         font-family: Josefin Sans;
+        @media (max-width: 511.98px) {
+            font-size: 16px;
+        }
       .jumping-letters{
        padding-top: 20px;
        margin-bottom: 30px;
        font-size: 48px;
        font-family: cursive;
+       @media (max-width: 767.98px) {
+        font-size: 36px ;
+      }
+      @media (max-width: 511.98px) {
+        font-size: 28px;
+      }
       }
       .jumping-letters span {
         display: inline-block;
@@ -31,7 +40,7 @@ h3{
     text-align: center;
 }
 li{
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 6px;
     color: #000101;
     font-weight: 500;
