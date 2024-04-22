@@ -1,19 +1,8 @@
 @import "../../../styles.scss";
 .header-section {
-  // background-color: linear-gradient(180deg, #000c1f -40%, #00071500) !important;
-
-  //   background: linear-gradient(
-  //     180deg,
-  //     #fff ,
-  //     #f8fcf2 ,
-  //     #80c707
-  // ) !important;
+  
   .navbar {
-    // background-color: linear-gradient(
-    //   180deg,
-    //   hsl(216, 100%, 6%) -20%,
-    //   #00071500
-    // ) !important;
+    
     background: linear-gradient(180deg, #80c707 30%, #ffffff);
     // background: linear-gradient( 180deg, #000c1f 20%, #0007154d);
 
@@ -58,63 +47,8 @@
   .navbar-brand img {
     animation: logoAnimation 4s 5;
   }
-  .landing-text {
   
-    h3 {
-      max-width: 600px;
-      font-family: Raleway;
-      font-size: 24px ;
-      color: white;
-      text-align: center;
-      font-weight: 500;
-      @media (max-width: 767.98px) {
-        font-size: 20px ;
-      }
-      @media (max-width: 511.98px) {
-        font-size: 14px ;
-      }
-    }
-    p {
-      font-size: 48px;
-      padding-top: 20px;
-      margin-bottom: 20px;
-      color: #c7e692;
-      font-weight: 600;
-      line-height: 50px;
-      @media (max-width: 767.98px) {
-        font-size: 32px;
-     
-      line-height: 36px;
-      }
-      @media (max-width: 511.98px) {
-        font-size: 26px;
-      padding-top: 10px;
-      margin-bottom: 10px;
-      line-height: 32px;
-      }
-    }
-    animation: slideInFromLeft 4s ease-in-out;
-    animation-delay: 1.5s;
-  }
-  @keyframes logoAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+  
   @media (max-width: 991.98px) {
     .navbar-collapse.show {
       background-color: linear-gradient(
@@ -129,29 +63,5 @@
     .my-menu .nav-link {
       cursor: pointer !important;
     }
-  }
-}
-
-.landing-box {
-  padding: 120px 10px 20px 10px;
-  height: calc(100vh);
-  background-image: url("../../../assets/bile-hand-img.jpg");
-  background: linear-gradient(
-      180deg,
-      rgba(0, 12, 31, 0.7) -40%,
-      /* Adjust opacity to 0.5 */ rgba(0, 7, 21, 0.7)
-        /* Adjust opacity to 0.5 */
-    ),
-    url("../../../assets/bile-hand-img.jpg");
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  .landing-content {
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
