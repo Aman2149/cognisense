@@ -167,3 +167,53 @@ li{
         transform: translateX(0);
     }
 }
+
+// bull image section
+.bull-img-section{
+    position: relative; /* To allow positioning the overlay */
+    height: 600px;
+    background-image: url("../../../assets/bull.png"), linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); /* Overlay and image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+}
+.bull-heading {
+    margin-top: 5em;
+}
+.bull-heading-content {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.8792px;
+    line-height: 49px;
+    color: #590d3e;
+    margin-top: 70px;
+}
+.bull-sub-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #363636;
+    margin-top: 10px;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 125%;
+}
+@media screen and (max-width: 600px) {
+   
+        .bull-sub-heading {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+   
+        .bull-sub-heading {
+            font-size: 12px;
+        }
+    }
+@media screen and (max-width: 600px) {
+ 
+        .bull-heading-content {
+            font-size: 29px;
+            line-height: 110%;
+        }
+    }
