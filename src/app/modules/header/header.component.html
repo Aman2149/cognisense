@@ -24,13 +24,14 @@
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav my-menu">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About Us</a>
-          <a class="nav-link" href="#">Articles</a>
-          <a class="nav-link" href="#">Contact Us</a>
+          <a routerLink="/" routerLinkActive="active" class="nav-link active" aria-current="page">Home</a>
+          <a routerLink="/about"  routerLinkActive="active" class="nav-link">About Us</a>
+          <a routerLink="/articles"  routerLinkActive="active" class="nav-link">Articles</a>
+          <a routerLink="/contact"  routerLinkActive="active" class="nav-link">Contact Us</a>
         </div>
       </div>
     </div>
   </nav>
  
 </div>
+<router-outlet></router-outlet>
