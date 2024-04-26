@@ -23,7 +23,7 @@
     </div>
   </div>
 </div>
-<div class="buy-sell section" #section>
+<div class="buy-sell section" >
   <h4 style="color: white">
     We are core believer of
     <p class="jumping-letters">
@@ -124,4 +124,12 @@
     </nz-col>
   </nz-row>
 </div>
-<router-outlet></router-outlet>
+<div class="home-carousel">
+ 
+  <nz-carousel [nzDotPosition]="'bottom'">
+    <div nz-carousel-content *ngFor="let slide of slides; let i = index">
+      <!-- Static content for testing -->
+      Slide {{ i + 1 }}: {{ slide.alt }}
+    </div>
+  </nz-carousel>
+</div>

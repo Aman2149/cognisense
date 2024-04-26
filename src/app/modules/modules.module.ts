@@ -12,6 +12,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { ArticleContentComponent } from './article-content/article-content.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 
 
 @NgModule({
@@ -20,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HomeContentComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ArticlesComponent,
+    ArticleContentComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +37,9 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule,
     MatToolbarModule,
     NzGridModule,
-   
+    NzIconModule,
+    NzCarouselModule,
+  
   ],
   exports: [
     HeaderComponent,
@@ -39,7 +47,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     AboutComponent,
     RouterModule,
-    FooterComponent
+    FooterComponent,
+    ArticlesComponent
     
   ]
 })
