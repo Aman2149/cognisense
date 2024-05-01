@@ -45,7 +45,7 @@
   }
 
   .navbar-brand img {
-    animation: logoAnimation 4s 5;
+    animation: logoAnimation 2s 3;
   }
   
   
@@ -63,5 +63,17 @@
     .my-menu .nav-link {
       cursor: pointer !important;
     }
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

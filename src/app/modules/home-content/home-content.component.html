@@ -4,7 +4,7 @@
     <div class="heading-s pt-10" style="font-family: cursive">
       COGNISENSE IS A DATA-RESEARCH DRIVEN TRADING FIRM WHERE CURIOSITY MEETS
       INFINITY
-      <div class="mt-40">
+      <div class="mt-40 logoSmall">
         <img
           src="../../../assets/cognisense Logo Symbol.png"
           alt=""
@@ -22,6 +22,38 @@
       </h3>
     </div>
   </div>
+</div>
+<div class="bull-img-section">
+  <nz-row class="bull-img">
+    <nz-col nzSpan="24">
+      <div class="bull-heading">
+        <div
+          class="bull-heading-content"
+          style="
+            color: white;
+            text-align: center;
+            font-family: Domine;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+          "
+        >
+        Achieving Stability in Turbulent Markets
+        </div>
+        <div
+          class="bull-sub-heading"
+          style="color: rgb(185, 185, 185); text-align: center"
+        >
+        In the volatile world of trading, we stand as a beacon of certainty. <br> As a leading proprietary trading house, our goal is simple yet profound: to thrive consistently amidst market chaos.
+        </div>
+        <div
+        class="bull-sub-heading"
+        style="color: rgb(185, 185, 185); text-align: center"
+      >
+      Driven by risk optimization, we specialize in generating consistent returns in futures markets.
+      </div>
+      </div>
+    </nz-col>
+  </nz-row>
 </div>
 <div class="buy-sell section" >
   <h4 style="color: white">
@@ -92,44 +124,17 @@
     </nz-row>
   </div>
 </div>
-<div class="bull-img-section">
-  <nz-row class="bull-img">
-    <nz-col nzSpan="24">
-      <div class="bull-heading">
-        <div
-          class="bull-heading-content"
-          style="
-            color: white;
-            text-align: center;
-            font-family: Domine;
-            margin-bottom: 20px;
-            letter-spacing: 4px;
-          "
-        >
-        Achieving Stability in Turbulent Markets
-        </div>
-        <div
-          class="bull-sub-heading"
-          style="color: rgb(185, 185, 185); text-align: center"
-        >
-        In the volatile world of trading, we stand as a beacon of certainty. <br> As a leading proprietary trading house, our goal is simple yet profound: to thrive consistently amidst market chaos.
-        </div>
-        <div
-        class="bull-sub-heading"
-        style="color: rgb(185, 185, 185); text-align: center"
-      >
-      Driven by risk optimization, we specialize in generating consistent returns in futures markets.
-      </div>
-      </div>
-    </nz-col>
-  </nz-row>
-</div>
+
 <div class="home-carousel">
  
-  <nz-carousel [nzDotPosition]="'bottom'">
+  <nz-carousel [nzDotPosition]="'bottom'" [nzAutoPlay]="true"  [nzAutoPlaySpeed]="5000" >
     <div nz-carousel-content *ngFor="let slide of slides; let i = index">
-      <!-- Static content for testing -->
-      Slide {{ i + 1 }}: {{ slide.alt }}
+    
+       <div class="carousel-item" [style.background-image]="'url(' + slide.src + ')'">
+        <div class="headingSlider" [style.color]="slide.color" >{{ slide.heading }} <p> <a [href]="slide.link" target="_blank">Know more</a></p>
+         
+        </div>
+      </div>
     </div>
   </nz-carousel>
 </div>

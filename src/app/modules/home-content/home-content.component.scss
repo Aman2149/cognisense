@@ -168,6 +168,9 @@ li{
     }
 }
 
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
 // bull image section
 .bull-img-section{
     position: relative; /* To allow positioning the overlay */
@@ -221,7 +224,73 @@ li{
 
     //for slider
 ::ng-deep .home-carousel{
-  background-color: #590d3e;
+ background-color: #c7e692;
   height: 400px;
+  @media screen and (max-width: 800px) {
+    height: 600px;
+    
+}
+  .ant-carousel .slick-initialized .slick-slide {
+    display: block !important;
+}
+.carousel-item{
+  position: relative;
+  display: block !important;
+  background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    object-fit: cover;
+    height: 100%;
+    
+     
+    .headingSlider {
+      padding: 20px 30px;
+      position: absolute;
+      top:20%;
+     font-size: 22px;
+     text-align: center;
+     width: 100%;
+     @media screen and (max-width: 1200px) {
+     padding: 16px;
+     font-size: 18px;
+      
+  }
+  @media screen and (max-width: 480px) {
+    top:10%
+ }
+ @media screen and (max-width: 400px) {
+  top:5%
+}
+     p{
+      margin-top: 16px;
+      a{
+        text-decoration: none;
+       padding: 8px 16px;
+       background-color: #eff8e0;
+       border-radius: 6px;
+       color:black;
+       font-size: 14px;
+       font-weight: 600;
+       &:hover{
+        font-size: 16px;
+       }
+      }
+     }
+    }
+}
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
 }
     
+
+.logoSmall{
+  animation: rotate 10s linear infinite;
+  animation-delay: 5s;
+}
