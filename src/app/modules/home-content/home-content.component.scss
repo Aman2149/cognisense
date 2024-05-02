@@ -118,7 +118,7 @@ li{
       line-height: 32px;
       }
     }
-    animation: slideInFromLeft 4s ease-in-out;
+    animation: slideInFromRight 4s ease-in-out;
     animation-delay: 1.5s;
   }
 
@@ -166,6 +166,14 @@ li{
     100% {
         transform: translateX(0);
     }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes rotate{
@@ -225,10 +233,19 @@ li{
     //for slider
 ::ng-deep .home-carousel{
  background-color: #c7e692;
-  height: 400px;
+  height: 480px;
+  .carousel-box{
+padding: 20px;
+width: 100%;
+height: 100%;
+  }
   @media screen and (max-width: 800px) {
     height: 600px;
     
+}
+@media screen and (max-width: 500px) {
+  height: 800px;
+  
 }
   .ant-carousel .slick-initialized .slick-slide {
     display: block !important;
