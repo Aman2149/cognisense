@@ -16,6 +16,8 @@ import { ArticlesComponent } from './articles/articles.component';
 import { ArticleContentComponent } from './article-content/article-content.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { ContactComponent } from './contact/contact.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     AboutComponent,
     FooterComponent,
     ArticlesComponent,
-    ArticleContentComponent
+    ArticleContentComponent,
+    ContactComponent,
+    TestimonialsComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +52,9 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     AboutComponent,
     RouterModule,
     FooterComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    ContactComponent,
+    TestimonialsComponent
     
   ]
 })

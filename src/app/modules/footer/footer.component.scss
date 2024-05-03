@@ -45,4 +45,29 @@
 
    
   }
-  
+  // image
+
+  .footer-img{
+    position: relative; 
+    height: 280px;
+    background-image: url("../../../assets/nifty.jpg"), linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); /* Overlay and image */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    @media screen and (max-width: 1300px) {
+     height: 200px;
+      
+  }
+  @media screen and (max-width: 1100px) {
+    height: 160px;
+     
+ }
+ @media screen and (max-width: 769px) {
+  height: 120px;
+   
+}
+  @media screen and (max-width: 500px) {
+    height: 100px;
+     
+ }
+  }
