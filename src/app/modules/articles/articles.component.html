@@ -4,6 +4,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem d
     <li *ngFor="let article of articles">
   
       <a [routerLink]="['/article', article.id]">{{ article.title }}</a>
+      <p>{{article.subContent}}</p>
   
     </li>
   
