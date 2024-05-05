@@ -1,6 +1,8 @@
 <div class="landing-box">
   <div class="landing-content" style="font-family: Raleway">
-    <div class="heading-xxl mt-20 mathifying">COGNISENSE MATHIFYING MARKETS</div>
+    <div class="heading-xxl mt-20 mathifying">
+      COGNISENSE MATHIFYING MARKETS
+    </div>
     <div class="heading-s pt-10" style="font-family: cursive">
       COGNISENSE IS A DATA-RESEARCH DRIVEN TRADING FIRM WHERE CURIOSITY MEETS
       INFINITY
@@ -37,25 +39,29 @@
             letter-spacing: 4px;
           "
         >
-        Achieving Stability in Turbulent Markets
+          Achieving Stability in Turbulent Markets
         </div>
         <div
           class="bull-sub-heading"
           style="color: rgb(185, 185, 185); text-align: center"
         >
-        In the volatile world of trading, we stand as a beacon of certainty. <br> As a leading proprietary trading house, our goal is simple yet profound: to thrive consistently amidst market chaos.
+          In the volatile world of trading, we stand as a beacon of certainty.
+          <br />
+          As a leading proprietary trading house, our goal is simple yet
+          profound: to thrive consistently amidst market chaos.
         </div>
         <div
-        class="bull-sub-heading"
-        style="color: rgb(185, 185, 185); text-align: center"
-      >
-      Driven by risk optimization, we specialize in generating consistent returns in futures markets.
-      </div>
+          class="bull-sub-heading"
+          style="color: rgb(185, 185, 185); text-align: center"
+        >
+          Driven by risk optimization, we specialize in generating consistent
+          returns in futures markets.
+        </div>
       </div>
     </nz-col>
   </nz-row>
 </div>
-<div class="buy-sell section" >
+<div class="buy-sell section">
   <h4 style="color: white">
     We are core believer of
     <p class="jumping-letters">
@@ -126,17 +132,68 @@
 </div>
 
 <div class="home-carousel">
- <div class="carousel-box">
-  <nz-carousel [nzDotPosition]="'bottom'" [nzAutoPlay]="true"  [nzAutoPlaySpeed]="5000" >
-    <div nz-carousel-content *ngFor="let slide of slides; let i = index">
+  <div class="carousel-box">
+    <nz-carousel
+      [nzDotPosition]="'bottom'"
+      [nzAutoPlay]="true"
+      [nzAutoPlaySpeed]="5000"
+    >
+      <div nz-carousel-content *ngFor="let slide of slides; let i = index">
+        <div
+          class="carousel-item"
+          [style.background-image]="'url(' + slide.src + ')'"
+        >
+          <div class="headingSlider" [style.color]="slide.color">
+            {{ slide.heading }}
+            <p><a [href]="slide.link" target="_blank">Know more</a></p>
+          </div>
+        </div>
+      </div>
+    </nz-carousel>
+  </div>
+</div>
+<div class="customer-testimonial">
+  <h2>ClIENT TESTIMONIAL</h2>
+  <div class="quote">
+    <div> <img src="../../../assets/quote.png" alt=""  style="background: transparent;"></div>
+    <div> <img src="../../../assets/quotation.png" alt=""  style="background: transparent;"></div>
+  </div>
+ 
+ 
+  <div class="testimonila-box">
+    <!-- <div class="slide-1">
+    <div class="test-img"><img src="../../../assets/shilpi.jpeg" alt="" /></div>
+    <div class="test-content">
+      <h3>Shilpi Singh</h3>
+      <h4>shilpisingh1182&#64;gmail.com</h4>
+      <p>I can’t say enough good things about Shakti futures. I started my training with Shakti futures in 2020, and was trading by 2021. That was my first hands on experience. Even though I don’t have any technical background, I was able to make it 40% of gain by the end of fourth quarter. They recommended books for me on technical analysis which were  very helpful, along with the strong Trader Psychology I developed with their guidance. The most important thing was making a strategy. Shakti himself help me to create my own strategy; my most useful asset thus far.</p>
+      
+    </div>
     
-       <div class="carousel-item" [style.background-image]="'url(' + slide.src + ')'">
-        <div class="headingSlider" [style.color]="slide.color" >{{ slide.heading }} <p> <a [href]="slide.link" target="_blank">Know more</a></p>
-         
+  </div> -->
+  <nz-carousel [nzDotPosition]="'bottom'" [nzAutoPlay]="false" >
+    <!-- Slide 1 -->
+    <div nz-carousel-content>
+      <div class="carousel-item">
+        <div class="test-img"><img src="../../../assets/shilpi.jpeg" alt="" /></div>
+        <div class="test-content">
+          <h3>Shilpi Singh</h3>
+          <h4>shilpisingh1182&#64;gmail.com</h4>
+          <p>I can’t say enough good things about Shakti futures. I started my training with Shakti futures in 2020, and was trading by 2021. That was my first hands-on experience. Even though I don’t have any technical background, I was able to make it 40% of gain by the end of the fourth quarter. They recommended books for me on technical analysis which were very helpful, along with the strong Trader Psychology I developed with their guidance. The most important thing was making a strategy. Shakti himself helped me to create my strategy; my most useful asset thus far.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 (Add more slides if needed) -->
+    <div nz-carousel-content>
+      <div class="carousel-item">
+        <div class="test-img"><img src="../../../assets/akash.jpeg" alt="" /></div>
+        <div class="test-content">
+          <!-- Content for slide 2 -->
+          njjjkjkjkjk
         </div>
       </div>
     </div>
   </nz-carousel>
+  </div>
 </div>
-</div>
-

@@ -23,13 +23,13 @@
         <ul>
           <li>
             <mat-icon style="font-size: 17px">home</mat-icon
-            ><a routerLink="/" routerLinkActive="active" class="nav-link">
+            ><a  (click)="scrollToTop()" routerLink="/" routerLinkActive="active" class="nav-link">
               Home</a
             >
           </li>
           <li>
             <mat-icon style="font-size: 17px">info</mat-icon
-            ><a routerLink="/about" routerLinkActive="active" class="nav-link"
+            ><a  (click)="scrollToTop()" routerLink="/about" routerLinkActive="active" class="nav-link"
               >About Us</a
             >
           </li>
@@ -39,12 +39,13 @@
               routerLink="/articles"
               routerLinkActive="active"
               class="nav-link"
+              (click)="scrollToTop()"
               >Articles</a
             >
           </li>
           <li>
             <mat-icon style="font-size: 17px">mail</mat-icon
-            ><a routerLink="/contact" routerLinkActive="active" class="nav-link"
+            ><a  (click)="scrollToTop()" routerLink="/contact" routerLinkActive="active" class="nav-link"
               >Contact Us</a
             >
           </li>

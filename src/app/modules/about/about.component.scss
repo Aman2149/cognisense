@@ -1439,3 +1439,9 @@
     }
   }
 }
+.small{
+  @media (max-width: 992px) {
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+}
+}
