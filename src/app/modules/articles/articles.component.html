@@ -1,6 +1,6 @@
 <app-header></app-header>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem doloremque laborum quis temporibus inventore? Hic, corporis eaque esse consequatur deserunt odio assumenda temporibus eum labore autem ea ex quam cum, dignissimos cumque error sint necessitatibus vitae rem facilis aut itaque similique consectetur! Laborum eum doloribus ipsum perspiciatis, eaque aspernatur? Ratione, eaque. Facere ullam aspernatur debitis totam, quisquam, in earum accusamus maiores, voluptatum officiis rem molestiae velit explicabo exercitationem consequuntur eos repellendus quia! Inventore dolore tempore quibusdam perferendis eos labore consectetur non reprehenderit impedit, eligendi sapiente ad doloribus distinctio minus dignissimos qui? Aut eius, doloremque ab doloribus numquam dolorem delectus? Earum accusamus possimus perferendis provident, natus expedita neque. Rerum itaque illum, quaerat esse dolore hic, nam ducimus nisi, reiciendis autem omnis commodi est amet labore. Ullam natus doloremque numquam rem blanditiis dignissimos? Sapiente provident dignissimos vel quae voluptate! Aliquam numquam totam aperiam quas delectus ullam assumenda laborum facere quia architecto dolores, nam esse consequatur ab ipsam voluptatem iusto voluptatibus ratione nihil nisi minima facilis repellendus accusamus eaque. Eius neque consequuntur possimus perferendis saepe fugit est laborum quisquam corporis atque tempore, quos eum in cupiditate vero. Possimus, autem. Magni repellendus hic voluptatibus illo iure quam eum, placeat non labore. Neque, atque!
-<ul>
+
+<!-- <ul>
 
     <li *ngFor="let article of articles">
   
@@ -9,7 +9,31 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem d
   
     </li>
   
-  </ul>
-  
-  
-  
+  </ul> -->
+
+<div class="article-container">
+  <article>
+    <div class="article-image-container">
+      <img
+        src="https://img.freepik.com/free-vector/newspaper-concept-illustration_114360-22666.jpg?w=826"
+      />
+    </div>
+    <div class="content-container">
+      <h3 class="article-title">Recent Articles</h3>
+      <div class="article-content">
+        <nz-collapse>
+          <nz-collapse-panel
+            *ngFor="let article of articles"
+            [nzHeader]="article.title"
+            [nzActive]="article.active"
+            [nzDisabled]="false"
+          >
+            <p>{{ article.subContent }}</p>
+            <a [routerLink]="['/article', article.id]" class="read-more-btn">Read More</a>
+          </nz-collapse-panel>
+        </nz-collapse>
+      </div>
+      <!-- <button class="read-more-btn">Read More</button> -->
+    </div>
+  </article>
+</div>

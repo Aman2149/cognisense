@@ -18,6 +18,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { ContactComponent } from './contact/contact.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     NzGridModule,
     NzIconModule,
     NzCarouselModule,
+    NzCollapseModule
   
   ],
   exports: [
