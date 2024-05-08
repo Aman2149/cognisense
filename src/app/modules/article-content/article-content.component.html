@@ -1,11 +1,392 @@
 <app-header></app-header>
-<p>article-content works!</p>
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea impedit consequuntur necessitatibus aliquam eligendi nemo. Expedita dolores perferendis nemo illo officia, totam officiis ullam adipisci eius dignissimos omnis pariatur, laborum laudantium nostrum? Aliquid debitis eveniet a eaque ducimus deleniti numquam tenetur natus non. Nesciunt porro libero non consequuntur totam. Sed itaque non distinctio deserunt aperiam. Voluptas natus dignissimos accusantium corrupti. Veritatis dolorum sequi deleniti, molestiae dolores accusamus blanditiis hic. Et molestias voluptatibus modi vel accusantium fuga voluptates ipsam nulla ullam. Consequuntur, veritatis ab est numquam cum officia sed voluptates et, aperiam excepturi voluptas quam sequi magnam odio nulla vero molestias!
-<div *ngIf="article">
-    <h2>{{ article.title }}</h2>
-    <p>{{ article.content }}</p>
+
+<div class="article-content">
+  <div class="article-img">
+    <h2 class="heading-box" *ngIf="article.id == 1">
+      <p class="animate-charcter">INVESTMENT vs FUTURES TRADING</p>
+    </h2>
+    <h2 class="heading-box" *ngIf="article.id == 2">
+      <p class="animate-charcter">WHO WINS IN STOCK MARKETS</p>
+    </h2>
+    <h2 class="heading-box" *ngIf="article.id == 3">
+      <p class="animate-charcter">TRADING vs GAMBLING/LOTTERY</p>
+    </h2>
+    <h2 class="heading-box" *ngIf="article.id == 4">
+      <p class="animate-charcter">HISTORY RHYMES ITSELF</p>
+    </h2>
   </div>
-  
-  <div *ngIf="!article">
-    <p>Article not found</p>
+  <div class="article-box" [ngClass]="'height-' + article.id">
+    <div class="articles">
+      <div *ngIf="article.id == 1">
+        <div>
+          <h3>
+            INVESTMENT vs FUTURES TRADING
+            <img src="../../../assets/investing.avif" alt="" width="80px" />
+          </h3>
+
+          <p>
+            Investment and trading are two very different approaches to earn
+            money from stock markets. Both the methods have need completely
+            different prospective and completely different mind sets. Let us
+            understand the difference between both through following table:
+          </p>
+          <div>
+            <div class="article_article_table__8qVSH">
+              <div class="article_table_title_bar__uw97w">
+                <div class="article_table_title__MbXm8">Investment</div>
+                <div class="article_table_title__MbXm8">Trading</div>
+              </div>
+              <div class="article_table_row_head__AzQy6">Perspective</div>
+              <div class="article_table_row__eU1bp">
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  It is process of putting idle money (savings) to work so that
+                  idle sitting money can grow and meet inflation and will help a
+                  person to meet his future goals. It is more like a cricket
+                  test match. Players here are highly technical and follow
+                  fundamental approach. Day to day fluctuations doesn’t matter
+                  in investment.
+                </div>
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  It is more like a business activity, buying and selling stocks
+                  or derivatives and encashing near term stock market
+                  fluctuations. It need active participation and it is more like
+                  one day cricket match and converts to 20-20 IPL if it is done
+                  intraday. Trader needs completely different skill set as
+                  compared to investment.
+                </div>
+              </div>
+              <div class="article_table_row_head__AzQy6">Period</div>
+              <div class="article_table_row__eU1bp">
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Investment is a buy and hold kind of approach and its period
+                  varies from 3-5 years ( short term), 7-10 years (mid-term) and
+                  11-25 years (long term). This data is to provide you an
+                  approximate idea.
+                </div>
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Trading is a regular buy and sell kind of activity and can be
+                  divided into following categories: Positional trader : Months
+                  to year Swing trader : weeks to months Intraday trader : No
+                  overnight position Scalp trader : Position held for seconds to
+                  minutes
+                </div>
+              </div>
+              <div class="article_table_row_head__AzQy6">Risk/Reward</div>
+              <div class="article_table_row__eU1bp">
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Aim of retail investor is to grow his idle money so that he
+                  can beat inflation and able to meet his future goals. So
+                  investment is done with a point of view of very lower risk as
+                  returns expected are lower.
+                </div>
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Trading is much higher risk and reward activity as compared to
+                  investment.
+                </div>
+              </div>
+              <div class="article_table_row_head__AzQy6">Skill set</div>
+              <div class="article_table_row__eU1bp">
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Investment is an art. As in a cricket test match we can see a
+                  real art of player. More technical and fundamentally strong
+                  and patience full game is seen in test match. Similarly,
+                  investor should have a combination of fundamental knowledge,
+                  technical knowledge and high level of patience more like an
+                  artist.
+                </div>
+                <div
+                  class="article_table_row_data__7iM5A global_normalText__x_Lai"
+                  style="margin-top: 0px"
+                >
+                  Trading is like an one-day match where skills are more
+                  important to hit fours and sixes. Fundamental knowledge
+                  doesn’t play much of the role, techniques also not important
+                  you create your room to hit sixes. It needs a combination of
+                  strong psychological understanding and a trading method.
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top: 20px">
+            I hope this will clear your understanding about investment and
+            trading.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="article.id == 2">
+        <h3>
+          WHO WINS IN STOCK MARKETS
+          <img src="../../../assets/cube.avif" alt="" width="50px" />
+        </h3>
+        <div class="article_article__3tTrV">
+          <div class="article_normalText__z8UvW">
+            Majority loses money in stock market, information flood out of
+            internet makes it a generally known truth. But data-based researches
+            help us to convert information into believe, helps improves our
+            perception and sometimes enable us to understand.
+          </div>
+          <div class="article_h2__TvfbD">Why?</div>
+          <div class="article_normalText__z8UvW">
+            Different researches conducted by Brad M. barber, Graduate School of
+            Management University of California, and his colleagues on the data
+            received from Taiwan stock exchange and other sources. They
+            concluded following observations during various researches:
+          </div>
+          <ul class="article_points__cSwRP">
+            <li class="article_point__UjXKe">
+              Analysis of the day trading of hundreds of thousands of investors
+              over a seventeen-year period showed that 60% of day traders left
+              after only one month, remaining quitted, after a period of 3 years
+              only 13% left, after a period of 5 years only 7% left and in
+              future only 1.6% of them were able to earn more than fees paid.
+              (2017)
+            </li>
+            <li class="article_point__UjXKe">
+              They also concluded in data-based research that value of around 2%
+              of GDP is equal to loss of individual traders.
+            </li>
+            <li class="article_point__UjXKe">
+              Individual investors, incur huge loses in active trading, who
+              mostly hold common stocks. (2000)
+            </li>
+            <li class="article_point__UjXKe">
+              Stock trading was reduced by 25% when lottery was introduced in
+              Taiwan in 2002. (2009)
+            </li>
+          </ul>
+          <div class="article_normalText__z8UvW">
+            Research published by Calvet, L. E., Campbell, J., &amp; Sodini P.
+            in 2009 in The quarterly journal of Economics states that :
+          </div>
+          <ul class="article_points__cSwRP">
+            <li class="article_point__UjXKe italic">
+              “Investors tend to sell winning investments while holding on to
+              their losing investments.”
+            </li>
+          </ul>
+          <div class="article_normalText__z8UvW">
+            Mr. Kumar, University of Miami, in 2008 published a research
+            conducted on data collected from large brokerage houses says:
+          </div>
+          <ul class="article_points__cSwRP">
+            <li class="article_point__UjXKe italic">
+              “Socio-economic and psychological factors which arcitiese known to
+              influence lottery purchases lead to excess investment in
+              lottery-type stocks. Results suggest that due to our fundamental
+              desire to gamble, the link between socioeconomic dynamics and the
+              stock market behavior may be stronger than currently believed. Of
+              course, this should not come as a surprise as psychological,
+              social, economic, religious, and political identities of an
+              individual supersede her identity as an investor.”
+            </li>
+          </ul>
+          <div class="article_normalText__z8UvW">
+            Sankar De , Naveen. R. Gondhi and Bhimasankaram Pochiraju in 2010
+            found that:
+          </div>
+          <ul class="article_points__cSwRP">
+            <li class="article_point__UjXKe italic">
+              “We find that the sign of the outcomes of recent past stock
+              trades, where a positive sign indicates a profitable trade and a
+              negative sign an unprofitable trade, influences the current
+              trading decisions of investors strongly. Further, the influence of
+              the sign of past trades is significantly stronger than the size of
+              the gains or losses from the same trades. We also find that, on an
+              average, trading under the influence of the sign of past trades
+              consistently results in decline in profits for the investors. Our
+              findings are consistent with a behavioral explanation suggested by
+              recent research in experimental psychology that the investors are
+              more sensitive to the affective intensity of a stimulus than to
+              its magnitude.”
+            </li>
+          </ul>
+          <div class="article_h2__TvfbD">
+            Through these researches we can point out some important facts.
+          </div>
+          <ul class="article_points__cSwRP">
+            <li class="article_point__UjXKe">
+              Only 1.6% of participants are successful in trading.
+            </li>
+            <li class="article_point__UjXKe">
+              Retail trader accounts to loses equivalent to 2% of GDP (a huge
+              loss).
+            </li>
+            <li class="article_point__UjXKe">
+              Lot of traders enters stock market with a perception of lottery.
+            </li>
+            <li class="article_point__UjXKe">
+              Participants tend to hold on their loses but book profits
+              comparatively earlier.
+            </li>
+            <li class="article_point__UjXKe">
+              People’s decision is highly impacted by their last trades.
+            </li>
+          </ul>
+          <div class="article_normalText__z8UvW">
+            These facts show that majority loses and loses huge amount because
+            of their wrong focus on earning huge money in short time span as
+            they consider trading as lottery, wrong method of cutting profits in
+            place of loses and because of wrong psychological process of
+            remaining influenced from losses and profits of latest trades. We
+            will go in details of these set-backs and will discuss upon removal
+            of these errors and transition to stress free trading in Trading
+            Psychology section.
+          </div>
+        </div>
+      </div>
+      <div *ngIf="article.id == 3">
+        <h3>
+          TRADING vs GAMBLING/LOTTERY
+          <img src="../../../assets/money.avif" alt="" width="80px" />
+        </h3>
+        <div>
+          <p style="margin: 20px 0px">
+            First let us try to understand what do we see in stock market. For
+            example, you perceive an opportunity in market based on your
+            experience or strategy but you failed to execute it, then what
+            stopped you from entering into a market. In my point of view, it is
+            only possible if either you do not want to earn money or you are
+            unable to act because of fear of failure or fear of loosing money.
+            Through this we can understand that stock market will make you face
+            what is inside of you at that moment. What is inside of you could be
+            a fear of loosing money, greed for opportunity, if you are dying to
+            hit a jackpot you will see an opportunity for it.
+          </p>
+
+          <p style="margin: 20px 0px">
+            In sum total you see what you want to see, stock markets reflect
+            nothing but yourself only. A gambler is always thirsty for jackpot,
+            this thirst is not only for money but it also for a chemical release
+            he got in his mind when he hit the jackpot sometime in his life, now
+            he is just searching the similar experience. And market moves only
+            in two direction either up or down so a gambler mindset also gets a
+            feeling ‘ ohh.. I was very close to win’ which acts as a catalyst
+            for his addiction and brings him again and again in stock markets
+            and eventually he ends up busted. Even if he hits a jackpot sometime
+            but his addiction will keep bringing him again and again in search
+            for same experience and eventually he will end up in loosing money.
+          </p>
+          <div class="gamblingImg">
+            <img src="../../../assets/gambling.jpg" alt="" />
+          </div>
+
+          <p style="margin: 20px 0px">
+            On the other hand, a trader mindset is a mindset of a businessman.
+            He is searching for a consistent return. He is not in a search of a
+            single big win, but he is searching for a method through which he
+            can regularly earn money from market. This approach brings him to
+            right method, right focus and right psychological process. Trader
+            approach is well disciplined, he acts with certain rules and
+            regulations and he is not in a market for any enjoyment or
+            addiction. He is here for business so he see and get business in
+            stock markets.
+          </p>
+        </div>
+      </div>
+      <div *ngIf="article.id == 4">
+        <h3>
+          HISTORY RHYMES ITSELF
+        
+        </h3>
+        <div>
+          <p style="margin: 30px 0px">
+            Key to understand future lies in the past. To understand this
+            concept let us draw an analogy between Universe and Mathematics.
+            With time universe is expanding and it began from nothing when
+            energy and mass was single entity, as per big bang theory. Let us
+            consider the beginning of universe as point zero and one side of
+            expansion as positive leading to +infinity and other side of
+            expansion as negative leading to -infinity. Now let us assume
+            mathematical numbers also expanding with time, starting from zero
+            towards +infinity and -infinity.
+          </p>
+
+          <div class="gamblingImg">
+            <img src="../../../assets/history.jpg" alt="" />
+          </div>
+<h5 style="font-size: 14px; text-align: center; padding: 20px;">Fig: Universe and numbers both expanding with time.</h5>
+          <p style="margin: 30px 0px">
+            Now consider every event in universe is unique and represented by
+            each number. As we all know that each number is unique and not
+            repeatable but there are some properties which are repeatable like
+            we can categorize them in odd, even and prime numbers. For even
+            numbers we know that every even no is divisible by 2, for prime nos
+            we know that it is not divisible by any no. Like this we have every
+            no as unique but some properties are rhyming. Similarly, we can
+            understand that every event in this universe is unique and not
+            repeatable but rhyming. So, we can understand that history does not
+            repeat itself but it rhymes itself. Similarly, stock market is
+            always new but we still can find some repeatable properties
+            pertaining to some patterns and can use them to take well informed
+            and mathematically calculated decisions.
+          </p>
+        </div>
+        <div class="gamblingImg">
+          <img src="../../../assets/universe.png" alt="" />
+        </div>
+      </div>
+      <div class="article_articleDetials__70729">
+        <div class="article_articleBy__gNDvi">By Founder</div>
+        <div class="article_articleOn__Yo_J4">Shakti Singh</div>
+      </div>
+      <div class="article_share_box__JiTsP">
+        <div class="share-box">
+          <span>Share on -> </span>
+          <div style="display: flex; flex-direction: row; gap: 20px">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.shaktifutures.com/articles/131730898"
+              ><div
+                class="share-button"
+                style="border-color: rgb(14, 118, 168)"
+              >
+                <span style="color: rgb(14, 118, 168)">LinkedIn</span
+                ><span class="share-icon"
+                  ><img
+                    src="https://img.icons8.com/ios-glyphs/30/0e76a8/linkedin-2--v1.png"
+                    width="16px"
+                    style="border: 0.5px solid rgb(14, 118, 168)"
+                /></span></div
+            ></a>
+            <div
+              class="share-button"
+              style="border-color: rgb(0, 128, 0)"
+              (click)="copyUrl()"
+            >
+              <span id="copy_url" style="color: rgb(0, 128, 0)">Copy URL</span
+              ><span class="share-icon"
+                ><img
+                  src="https://img.icons8.com/external-aficons-studio-glyph-aficons-studio/17/008000/external-copy-user-interface-aficons-studio-glyph-aficons-studio.png"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div *ngIf="!article">
+  <p>Article not found</p>
+</div>

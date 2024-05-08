@@ -33,4 +33,26 @@ if(id){
 }
   
   }
+  copyUrl() {
+    const url = window.location.href;
+
+    
+    const input = document.createElement('input');
+    input.value = url;
+
+    
+    document.body.appendChild(input);
+
+   
+    input.select();
+
+ 
+    document.execCommand('copy');
+
+   
+    document.body.removeChild(input);
+
+    
+    alert('URL copied , share it !');
+  }
 }
