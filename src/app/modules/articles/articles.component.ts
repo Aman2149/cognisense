@@ -11,6 +11,10 @@ export class ArticlesComponent {
   articles!: any[];
 
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 
   constructor(private articleService: ArticleService) { }
 

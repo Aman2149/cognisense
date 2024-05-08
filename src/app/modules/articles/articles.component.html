@@ -29,7 +29,7 @@
             [nzDisabled]="false"
           >
             <p>{{ article.subContent }}</p>
-            <a [routerLink]="['/article', article.id]" class="read-more-btn">Read More</a>
+            <a [routerLink]="['/article', article.id]" class="read-more-btn" (click)="scrollToTop() ">Read More</a>
           </nz-collapse-panel>
         </nz-collapse>
       </div>
