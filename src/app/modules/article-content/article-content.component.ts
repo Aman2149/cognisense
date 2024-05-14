@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { ArticleService } from '../article.service';
 
@@ -16,9 +16,7 @@ export class ArticleContentComponent {
 
 
 
-  constructor(private route: ActivatedRoute, private articleService: ArticleService) { }
-
-
+  constructor(private route: ActivatedRoute, private articleService: ArticleService,private router: Router) { }
 
   ngOnInit(): void {
 
@@ -54,5 +52,8 @@ if(id){
 
     
     alert('URL copied , share it !');
+  }
+  goToArticles(): void {
+    this.router.navigate(['/articles']);
   }
 }

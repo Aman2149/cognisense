@@ -1,7 +1,9 @@
 <app-header></app-header>
 
 <div class="article-content">
+  
   <div class="article-img">
+   
     <h2 class="heading-box" *ngIf="article.id == 1">
       <p class="animate-charcter">INVESTMENT vs FUTURES TRADING</p>
     </h2>
@@ -14,9 +16,11 @@
     <h2 class="heading-box" *ngIf="article.id == 4">
       <p class="animate-charcter">HISTORY RHYMES ITSELF</p>
     </h2>
+   
   </div>
   <div class="article-box" [ngClass]="'height-' + article.id">
     <div class="articles">
+      <mat-icon style="float: right; cursor: pointer;" (click)="goToArticles()"  matTooltip="Go back to articles!">assignment_return</mat-icon>
       <div *ngIf="article.id == 1">
         <div>
           <h3>

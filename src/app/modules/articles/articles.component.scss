@@ -18,6 +18,10 @@ article {
     overflow: hidden;
     padding-bottom: 30px;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+    @media (max-width: 991.98px) {
+      width: 100%;
+     
+     }
   }
   
   article:hover {
@@ -30,6 +34,9 @@ article {
     height: auto;
     margin: 16px;
     overflow: hidden;
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
   
   .article-image-container img {
@@ -44,6 +51,9 @@ article {
     gap:40px;
     width: 70%;
     padding: 0 15px;
+    @media (max-width: 991.98px) {
+     width: 100%;
+    }
   }
   
   .content-container .article-title {
@@ -79,4 +89,12 @@ article {
     background-color: #fee490;
     border-radius: 30px;
   }
-  
+  ::ng-deep .content-container{
+    .ant-collapse {
+      font-size: 16px;
+      @media (max-width: 991.98px) {
+       font-size: 13px;
+       }
+      
+    }
+  }

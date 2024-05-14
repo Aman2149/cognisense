@@ -19,6 +19,7 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { ContactComponent } from './contact/contact.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
     NzGridModule,
     NzIconModule,
     NzCarouselModule,
-    NzCollapseModule
+    NzCollapseModule,
+    MatTooltipModule
   
   ],
   exports: [
